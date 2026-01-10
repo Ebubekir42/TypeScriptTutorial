@@ -1,0 +1,12 @@
+const getTime = (): number => new Date().getTime();
+const printHello = (): void => console.log("Hello!");
+const multiply = (a: number, b: number) => a * b;
+const add = (a: number, b: number, c?: number) => a + b + (c || 0);
+const pow = (value: number, exponent: number = 10) => value * exponent;
+const divide = ({ dividend, divisor }: { dividend: number, divisor: number }) => dividend / divisor;
+divide({ dividend: 10, divisor: 5 });
+const add2 = (a: number, b: number, ...rest: number[]) => a + b + rest.reduce((p, c) => p + c, 0);
+console.log(add2(1, 2, 3, 4, 5, 6, 7));
+type Negate = (value: number) => number;
+const negateFunction: Negate = val => val * -1;
+console.log(negateFunction(5));
