@@ -5,7 +5,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node build/SimpleTypes.js",
+    "start": "node build/AsyncProgramming.js",
     "dev": "tsc -w"
   }
 }
